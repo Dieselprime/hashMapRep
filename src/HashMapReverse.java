@@ -9,15 +9,15 @@ public class HashMapReverse<K, V> {
 
         Map<V, Collection<K>> hashMapRev = new HashMap<>();
 
-       // hashM.keySet(); // получаем ключи
+                // hashM.keySet(); // получаем ключи
         for (K k : hashM.keySet()) {
-            hashM.get(k); // получаем значения
-            if (hashM.get(k)==) { // если есть одинаковые значения, выводить их все, а не одно из.
- // помещать все значения в пустой массив, а затем вводить его
-            }
+            hashM.get(k);         // получаем значения
+                                 // если есть одинаковые значения, выводить их все, а не одно из.
+                                // помещать все значения в пустой массив, а затем вводить его
             hashMapRev.put(hashM.get(k), List.of(k));
-        }
 
-        return hashMapRev;
+        }
+            return hashMapRev;
+
     }
 }
